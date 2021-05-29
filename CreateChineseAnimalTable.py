@@ -2,6 +2,7 @@ import boto3
 ddb = boto3.client("dynamodb")
 
 def handler(event, context):
+    print("oi!")
     try:
         data = ddb.put_item(
             TableName="ChineseAnimal",
